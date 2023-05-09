@@ -154,3 +154,5 @@ class TestDog:
 
         assert(Dog.find_by_id(1).name == "joseph" \
             and Dog.find_by_name("joey") == None)
+        
+        
