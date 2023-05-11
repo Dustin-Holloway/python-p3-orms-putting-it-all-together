@@ -91,27 +91,14 @@ class Dog:
             dog = cls(name, breed)
             dog.save()
             return dog
-        
-
-    
-    # def update(self): 
-
-    #     sql = """
-    #     UPDATE dogs SET name = ?, breed = ? WHERE id = ?
-    #     """
-    #     CURSOR.execute(sql, (self.name, self.breed, self.id))
-    #     CONN.commit()  
-    #     return self
-
-        
+            
 
     def update(self):
         sql = """
         UPDATE dogs SET name = ?, breed = ? WHERE id = ?
         """
-
         CURSOR.execute(sql, (self.name, self.breed, self.id))
-        CONN.commit()
-        return self
+
+
 
 
